@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="./design.css">
+</head>
+<body>
+    <header><center><h3>Registration Form</h3></center></header>
+    <hr>
+
+    <form action="/action.php">
+        <input class= "black-text" type="text" placeholder="username">
+        <br>
+        <input class= "black-text" type="password" placeholder="Password">
+        <br>
+        <hr>
+
+        <h5><b>Select Your Class</b></h5>
+        <label for="ID1">    <!--without label you cant tick on radio button by clicking on 
+                                its text-->
+            <input type="radio" value="class X" id="ID1" name="class">Class X
+        </label>
+        <br>
+        <label for="ID2">
+            <input type="radio" value="class XII" id="ID2" name="class">Class XII
+        </label>
+        <br>
+        <h5><b>select your subject</b></h5>
+        <label for="math">
+            <input type="checkbox" name="Subject" id="math" value="math">Mathematics
+        </label>
+        <br>
+        <label for="Science">
+            <input type="checkbox" name="Subject" id="Science" value="math">Science
+        </label>
+        <br>
+        <label for="Chemistry" >
+            <input type="checkbox" name="Subject" id="Geography" value="math" >Chemistry
+        </label>
+
+        <h5><b>Select your city</b></h5>
+        <select name="city">
+            <option value="Delhi">Delhi</option>
+            <option value="jaipur">jaiput</option>
+            <option value="Kathmandu">Kathmandu</option>
+            <option value="bhatinda">bhatinda</option>
+            <option value="bagru">bagru</option>
+        </select>
+        <br>
+        <br>
+        <hr>
+        <textarea name="Feedback" id="Feedback" cols="30" rows="1" placeholder="Feedback"></textarea>
+        <br>
+        <input type="submit" value="submit">
+        <br>
+        <hr>
+        <h4>Enjoy the video!!!</h4>
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/U2d6RpB-mCA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <iframe src="https://www.wikipedia.org/" width="560" height="315" frameborder="0"></iframe>
+    </form>
+</body>
+</html>

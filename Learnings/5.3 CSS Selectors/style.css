@@ -1,0 +1,21 @@
+ol {
+  margin-left: -40px;
+  margin-top: -20px;
+  list-style-position: inside;
+}
+
+p {
+  color: red;
+} /*TODO 1*/
+.note {
+  font-size: 20px;
+} /*TODO 2*/
+#id-selector-demo {
+  color: green;
+}/*TODO 3*/
+li[value="4"] {
+  color: blue;
+}/*TODO 4*/
+* {
+  text-align: center;
+}
