@@ -1,0 +1,50 @@
+body {
+  background-color: rgb(14, 17, 23);
+  color: aliceblue;
+}
+.fs-4{
+  color: rgb(199, 235, 255);
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bolder;
+}
+.main {
+  display: flex;
+  float: left;
+  justify-content: center;
+  margin-top: 12vh;
+  margin-left: 160px;
+  margin-right: 140px;
+  margin-bottom: 250px;
+  gap: 145px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+h2 {
+  font-size: 41.9592px;
+}
+
+p {
+  background-color: rgba(61, 157, 243, 0.2);
+  color: rgb(199, 235, 255);
+  font-size: 16px;
+  line-height: 28px;
+  padding: 20px;
+  text-align: left;
+  box-sizing: border-box;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+
+nav .navbar-nav li a{
+  color: black !important;
+  }
+
+.nav .nav-item a{
+  background-color: transparent;
+  color: rgb(199, 235, 255);
+}
+.nav .nav-item .active{
+  background-color: rgba(61, 157, 243, 0.2);
+}
+
