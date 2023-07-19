@@ -18,8 +18,18 @@ body {
   gap: 145px;
   font-family: "Source Sans Pro", sans-serif;
 }
+span{
+  color: rgb(199, 235, 255);
+}
 h2 {
   font-size: 41.9592px;
+  color: rgb(199, 235, 255);
+}
+
+h3{
+  font-size: 32.9592px;
+  color: rgb(199, 235, 255);
+  width: 400px;
 }
 
 p {
@@ -48,3 +58,57 @@ nav .navbar-nav li a{
   background-color: rgba(61, 157, 243, 0.2);
 }
 
+.projects{
+  display: grid;
+  grid-template-columns: 700px 700px;
+  margin-top: 100px;
+}
+
+.column-1{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin-left: 0px;
+  margin-right: 500px;
+}
+.column-2{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin-right: 0px;
+}
+
+.todo{
+  margin-top: 20px;
+  margin-bottom: 100px;
+  width: 600px;
+}
+
+.pdf-image{
+  margin-top: 20px;
+  margin-bottom: 56.25;
+}
+
+.pdf-template{
+  width: 600px;
+  margin-top: 54.7px;
+  margin-bottom: 100px;
+}
+
+.pdf-invoice{
+  margin-top: 20px;
+  margin-bottom: 56.25;
+}
+.pdf-invoice-txt{
+  width: 600px;
+  margin-top: 70px;
+}
+
+.portfolio-img{
+  margin-top: 30px;
+}
+
+.portfolio-txt{
+  margin-top: 143px;
+  width: 600px;
+}
