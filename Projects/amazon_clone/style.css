@@ -2,7 +2,7 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: sans-serif ;
 }
 
 .navbar{
@@ -107,4 +107,29 @@ span{
 
 .nav-cart{
     font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.panel{
+    display: flex;
+    height: 40px;
+    background-color: #232F3E;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.panel-options p{
+    display: inline;
+    margin-left: 15px;
+}
+
+.panel-options{
+    width: 70%;
+    font-size: 0.95rem;
+}
+
+.panel-deals{
+    font-size: 0.99rem;
 }
