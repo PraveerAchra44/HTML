@@ -5,6 +5,11 @@
     font-family: sans-serif ;
 }
 
+a{
+    color: #007185;
+    text-decoration: none;
+}
+
 .navbar{
     display: flex;
     align-items: center;
@@ -157,4 +162,32 @@ span{
 
 .hero-msg a{
     color: #007185;
+}
+
+.shop-section{
+    background-color: #e2e7e6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.box{
+    border: none;
+    height: 420px;
+    width: 350px;
+    padding: 20px 0px 15px 0px;
+    margin-top: 0.95rem;
+    background-color: #fff;
+}
+
+.box-content{
+    margin-left: 0.95rem;
+    margin-right: 0.95rem;
+}
+
+.box-img{
+    height: 307px;
+    margin-top: 0.95rem;
+    margin-bottom: 1.6rem;
+    background-size: contain;
 }
