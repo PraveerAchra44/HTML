@@ -191,3 +191,47 @@ span{
     margin-bottom: 1.6rem;
     background-size: contain;
 }
+
+.line-break{
+    border: none;
+    background-color: #e2e7e6;
+    height: 1rem;
+}
+
+footer{
+    margin-top: 2rem;
+}
+
+.foot-panel1{
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-panel2{
+    padding: 2rem;
+    display: flex;
+    background-color: #222f3d;
+    color: white;
+    height: 300px;
+    justify-content: space-evenly;
+}
+
+ul a{
+    font-size: 0.9rem;
+    margin-top: 10px;
+    display: block;
+    color: #dddddd;
+}
+
+.foot-panel3{
+    border-top: 0.5px solid #dddddd;
+    height: 70px;
+    background-color: #222f3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
