@@ -57,3 +57,28 @@ h3{
     width: 150px;
     padding-top: 60px;
 }
+
+.player{
+    margin-bottom: 20px;
+}
+
+.choice_by_user{
+    display: flex;
+    height: 70px;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+.choice-img_container{
+    height: 100%;
+}
+
+.choice-img{
+    padding-top: 20px;
+    height: 40px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.choice-img:hover{
+    height: 45px;
+}
