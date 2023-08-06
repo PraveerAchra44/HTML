@@ -49,6 +49,8 @@ h3{
     align-items: center;
 }
 
+
+
 .img_box{
     height: 300px;
 }
@@ -61,6 +63,7 @@ h3{
 .player{
     margin-bottom: 20px;
 }
+
 
 .choice_by_user{
     display: flex;
@@ -81,4 +84,13 @@ h3{
 }
 .choice-img:hover{
     height: 45px;
+}
+
+.empty-div{
+    height: 70px;
+}
+
+button{
+    border: none;
+    background-color: transparent;
 }
