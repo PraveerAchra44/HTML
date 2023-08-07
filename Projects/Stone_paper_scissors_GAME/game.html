@@ -9,61 +9,89 @@
 </head>
 
 <body>
-    <div class="gradient-container">
-        <div class="round">
-            <h1>ROUND 1</h1>
-        </div>
-
-        <div class="choice-columns">
-            <!-- column 1 -->
-            <div class="column1 column">
-                <div class="user player">
-                    <h2>User</h2>
-                </div>
-                <div class="score_text">
-                    <h3>SCORE</h3>
-                </div>
-                <div class="user_score">
-                    <h4>0</h4>
-                </div>
-                <div class="user_option_img img_box">
-                    <img class="image user_image" src="resources/paper.png" alt="user_choice">
-                </div>
-                <!-- options to choose by user -->
-                <div class="choice_by_user">
-                    <div class="choice-img_container">
-                        <button class="option-button"><img class="choice-rock choice-img" src="resources/rock.png" alt="rock"></button>
-                    </div>
-                    <div class="choice-img_container">
-                        <button class="option-button"><img class="choice-paper choice-img" src="resources/paper.png" alt="paper"></button>
-                    </div>
-                    <div class="choice-img_container">
-                        <button class="option-button"><img class="choice-scissor choice-img" src="resources/scissors.png" alt="scissor"></button>
-                    </div>
-                </div>
-            </div>
-            <!-- column 2 -->
-            <div class="column2 column">
-                <div class="computer player">
-                    <h2>Computer</h2>
-                </div>
-                <div class="score_text">
-                    <h3>SCORE</h3>
-                </div>
-                <div class="user_score">
-                    <h4>0</h4>
-                </div>
-                <div class="comp_option_img img_box">
-                    <img class="image comp_image" src="resources/scissors.png" alt="computer_choice">
-                </div>
-                <div class="empty-div">
-
-                </div>
+    <section class="gradient-container">
+        <!-- ROUND CONTAINER -->
+        <div class="round_container">
+            <div class="round">
+                <h1 style="font-size: 4rem;">ROUND __</h1>
             </div>
         </div>
-    </div>
+        <!-- RESULT IMAGE CONTAINER -->
+        <div class="result_field">
+            <div class="result_images">
+                <span class="user_result">
+                    <h2 style="text-align: center; margin-bottom: 40px;">USER</h2>
+                    <img src="resources/rock.png" alt="">
+                </span>
+                <span class="comp_result">
+                    <h2 style="text-align: center; margin-bottom: 40px;">COMPUTER</h2>
+                    <img src="resources/paper.png" alt="">
+                </span>
+            </div>
+        </div>
+        <!-- OPTIONS CONTAINER -->
+        <div class="option_image_container">
+            <div class="option_images">
+                <span class="option_image">
+                    <img src="resources/rock.png" alt="">
+                    <p>Rock</p>
+                </span>
+                <span class="option_image">
+                    <img src="resources/paper.png" alt="">
+                    <p>Paper</p>
+                </span>
+                <span class="option_image">
+                    <img src="resources/scissors.png" alt="">
+                    <p>Scissor</p>
+                </span>
+            </div>  
+        </div>
+
+
+    </section>
 
     <script type="module" src="script.js"></script>
 </body>
 
 </html>
+
+<!-- <div class="round">
+    <h1>ROUND 1</h1>
+</div>
+
+<div class="choice-columns">
+    <!-column 1 -->
+<!-- <div class="column1 column">
+        <div class="user player">
+            <h2>User</h2>
+        </div>
+        <span class="user_result">
+            <img src="resources/paper.png" alt="">
+        </span> -->
+
+<!-- <div class="option_images">
+            <span class="option_image">
+               <img src="resources/rock.png" alt="">
+               <p style="font-size: 12px; text-align: center;">Rock</p>
+            </span>
+            <span class="option_image">
+               <img src="resources/paper.png" alt="">
+               <p style="font-size: 12px; text-align: center;">Paper</p>
+            </span>
+            <span class="option_image">
+                <img src="resources/scissors.png" alt="">
+                <p style="font-size: 12px; text-align: center;">Scissors</p>
+            </span>
+        </div> -->
+<!-- </div> -->
+<!-- column 2 -->
+<!-- <div class="column2 column">
+        <div class="computer player">
+            <h2>Computer</h2>
+        </div>
+        <span class="comp_result">
+            <img src="resources/scissors.png" alt="">
+        </span>
+    </div>
+</div>
+<div class="result">Let's Play</div> -->

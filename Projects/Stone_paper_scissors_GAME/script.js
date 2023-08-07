@@ -1,37 +1,14 @@
-// for user
-let user_choice;
-let decision = ['r','p','s'];
+//get DOM elements
 
-let len = document.querySelectorAll(".option-button").length;
+const gameContainer = document.querySelector(".gradient-container"),
+    userResult = document.querySelector(".user_image img"),
+    compResult = document.querySelector(".comp_image img"),
+    result = document.querySelector(".result"),
+    optionImages = document.querySelectorAll(".option_image");
 
-for (let i = 0; i < len; i++) {
-    document.querySelectorAll(".option-button")[i].addEventListener("click", function (event) {
-        
-        let change1;
-        let new_source;
-        let new_img;
-        if (event.target.className === "choice-rock choice-img"){
-            user_choice = 'r';
-            change1 = "rock.png";
-            new_source = "resources/"+change1;
-            new_img = document.querySelectorAll(".user_image");
-            new_img.setAttribute("scr",new_source);
-        }
-        else if(event.target.className === "choice-paper choice-img"){
-            user_choice = 'p';
-            change1 = "paper.png";
-            new_source = "resources/"+change1;
-            new_img = document.querySelector(".user_image");
-            new_img.setAttribute("scr",new_source);
-        }
-        else if(event.target.className === "choice-scissor choice-img"){
-            user_choice = 's';
-            change1 = "scissors.png";
-            new_source = "resources/"+change1;
-            new_img = document.querySelector(".user_image");
-            new_img.setAttribute("scr",new_source);
-        }
-        console.log(user_choice);
-    });
-}
+optionImages.forEach((image,index)=>{
+    image.addEventListener("click",(e)=>{
+        image.classList.add("active");
+    })
+})
 
