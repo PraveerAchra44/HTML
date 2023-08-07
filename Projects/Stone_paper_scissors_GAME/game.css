@@ -45,7 +45,7 @@ body ,html{
 
 .option_image_container{
     margin-top: 50px;
-    padding-left: 23%;
+    padding-left: 14%;
 }
 
 .option_images{
@@ -55,11 +55,26 @@ body ,html{
     width: 20%;
 }
 
+.option_images span{
+    width: 50px;
+}
+
 .option_image img{
     width: 40px;
 }
+.option_image{
+    opacity: 0.5;
+    cursor: pointer;
+}
 
+.option_image:hover{
+    width: 44px;
+    opacity: 1;
+}
 
+.result{
+    font-size: 1.5rem;
+}
 
 
 
@@ -119,10 +134,3 @@ h2{
 }
 
 
-.result{
-    display: flex;
-    height: 50px;
-    font-size: 2.5rem;
-    align-items: center;
-    justify-content: center;
-} */
