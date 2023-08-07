@@ -26,6 +26,7 @@ body ,html{
 }
 
 .result_field{
+    height: 400px;
     margin-top: 50px;
     padding-top: 20px;
 }
@@ -34,6 +35,13 @@ body ,html{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.user_result{
+    height: 399px;
+}
+.comp_result{
+    height: 399px;
 }
 
 .user_result img{
@@ -61,6 +69,7 @@ body ,html{
 
 .option_image img{
     width: 40px;
+    pointer-events: none;
 }
 .option_image{
     opacity: 0.5;
@@ -69,6 +78,10 @@ body ,html{
 
 .option_image:hover{
     width: 44px;
+    opacity: 1;
+}
+
+.option_image.active{
     opacity: 1;
 }
 
