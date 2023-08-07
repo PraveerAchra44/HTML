@@ -19,5 +19,28 @@ optionImages.forEach((image, index) => {
         let imageSrc = e.target.querySelector("img").src;
         userResult.src = imageSrc;
 
+        let randomNumber = Math.floor(Math.random() * 3)
+        let compImages = ["resources/rock.png", "resources/paper.png", "resources/scissors.png"]
+        compResult.src = compImages[randomNumber];
+
+        let userValue = ["R", "P", "S"][index];
+        let compValue = ["R", "P", "S"][randomNumber];
+
+        let outcomes = {
+            RR: "Draw",
+            RP: "Computer wins🚩",
+            RS: "🚩User wins",
+            PP: "Draw",
+            PR: "🚩User wins",
+            PS: "Comp wins🚩",
+            SS: "Draw",
+            SR: "Comp wins🚩",
+            SP: "🚩User wins"
+        }
+
+        let outcomeValue = outcomes[userValue + compValue]
+
+        result.textContent = outcomeValue;
+
     });
 });
