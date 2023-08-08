@@ -15,6 +15,15 @@ optionImages.forEach((image, index) => {
             index !== index2 && image2.classList.remove("active")
         });
 
+        let count = 0
+        let round = document.getElementById("round_count");
+        let button = document.getElementsByClassName("option_image")
+        button = function(){
+            round.innerHTML = "Round " + count;
+            count++;
+        }
+
+
         // //get the source of the clicked option image
         let imageSrc = e.target.querySelector("img").src;
         userResult.src = imageSrc;
