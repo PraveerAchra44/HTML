@@ -1,38 +1,37 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    font-family: sans-serif;
-    color: aliceblue;
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: sans-serif;
+  color: aliceblue;
 }
 
-
-body{
-    background-image: url("wallpaper.jpg");
-    background-size: cover;
+body {
+  background-image: url("wallpaper.jpg");
+  background-size: cover;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
-    gap: 60px;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  gap: 60px;
 }
 
-.time{
-    display: flex;
-    flex-direction: row;
-    width: 60%;
-    justify-content: space-around;
-    align-items: center;
+.time {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  justify-content: space-around;
+  align-items: center;
 }
 
-h1{
-    font-size: 6rem;
+h2 {
+  font-size: 2rem;
 }
 
-h2{
-    font-size: 2rem;
+span{
+  font-size: 6rem;
 }
