@@ -18,6 +18,9 @@ body {
   height: 100vh;
   text-align: center;
   gap: 60px;
+  box-sizing: border-box;
+  border: 20px solid white;
+  border-radius: 20px;
 }
 
 .time {
