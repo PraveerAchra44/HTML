@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo application</title>
+</head>
+
+<body>
+    <h1>
+        <%= today %>
+    </h1>
+    <ul>
+        <li>buy Food</li>
+        <li>cook Food</li>
+        <li>Eat Food</li>
+
+        <% for( let index=0; index < newListItems.length; index++ ) { %>
+            <li>
+                <%=newListItems[index]%>
+            </li>
+            <% } %>
+
+                <form action="/" method="post">
+                    <input type="text" name="newitem">
+                    <button type="submit">Add</button>
+                </form>
+    </ul>
+</body>
+
+</html>
