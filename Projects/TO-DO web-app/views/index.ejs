@@ -1,32 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include("partials/header.ejs") %>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToDo application</title>
-</head>
+    <body>
+        <div class="container">
+            <div class="container-time">
+                <h1>
+                    <%= today %>
+                </h1>
+            </div>
 
-<body>
-    <h1>
-        <%= today %>
-    </h1>
-    <ul>
-        <li>buy Food</li>
-        <li>cook Food</li>
-        <li>Eat Food</li>
+            <div class="todos-container">
 
-        <% for( let index=0; index < newListItems.length; index++ ) { %>
-            <li>
-                <%=newListItems[index]%>
-            </li>
-            <% } %>
+                <div class="todos">
+                    <ul>
+                        <li><input type="checkbox"> buy Food</li>
+                        <li><input type="checkbox"> cook Food</li>
+                        <li><input type="checkbox"> Eat Food</li>
+    
+                        <% for( let index=0; index < newListItems.length; index++ ) { %>
+                            <li><input type="checkbox">
+                                <%=newListItems[index]%>
+                            </li>
+                            <% } %>
+    
+                    </ul>
+                </div>
 
-                <form action="/" method="post">
-                    <input type="text" name="newitem">
-                    <button type="submit">Add</button>
-                </form>
-    </ul>
-</body>
+                <div class="add-todos">
+                    <form action="/" method="post">
+                        <input type="text" name="newitem">
+                        <button type="submit">Add</button>
+                    </form>
+                </div>
 
-</html>
+                
+            </div>
+        </div>
+
+    </body>
+    <%- include("partials/footer.ejs") %>
