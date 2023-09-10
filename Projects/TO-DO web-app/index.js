@@ -15,14 +15,20 @@ app.get("/", (req, res) => {
     var date = new Date();
     let day = date.toLocaleDateString("en-US", options);
     // console.log(today.toLocaleDateString("en-US", options));
-
-    res.render("index.ejs",{today:day, newListItems:newItems});
+    res.render("index.ejs", { today: day, newListItems: newItems });
 })
 
-app.post("/",(req,res)=>{
+app.post("/", (req, res) => {
+
     let newitem = req.body.newitem;
-    newItems.push(newitem);
+    if (newitem=== '') {
+        res.redirect("/");
+    }
+    else {
+        newItems.push(newitem);
+    }
     res.redirect("/");
+
 })
 
 app.listen(port, () => {

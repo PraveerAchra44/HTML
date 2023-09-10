@@ -1,40 +1,45 @@
-<%- include("partials/header.ejs") %>
+<!DOCTYPE html>
+<html lang="en">
 
-    <body>
-        <div class="container">
-            <div class="container-time">
-                <h1>
-                    <%= today %>
-                </h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h2>
+                <%= today %>
+            </h2>
+            <div class="row">
+                <form action="/" method="post" class="submit-form">
+                    <input type="text" id="input-box" name="newitem" placeholder="add your todo-app">
+                    <button type="submit">Add</button>
+                </form>
             </div>
+            <ul id="list-container">
 
-            <div class="todos-container">
 
-                <div class="todos">
-                    <ul>
-                        <li><input type="checkbox"> buy Food</li>
-                        <li><input type="checkbox"> cook Food</li>
-                        <li><input type="checkbox"> Eat Food</li>
-    
-                        <% for( let index=0; index < newListItems.length; index++ ) { %>
-                            <li><input type="checkbox">
-                                <%=newListItems[index]%>
-                            </li>
-                            <% } %>
-    
-                    </ul>
-                </div>
+                <% for( let index=0; index < newListItems.length; index++ ) { %>
+                    <div class="tasks">
 
-                <div class="add-todos">
-                    <form action="/" method="post">
-                        <input type="text" name="newitem">
-                        <button type="submit">Add</button>
-                    </form>
-                </div>
-
-                
-            </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="packersOff" id="packers" value="1" />
+                            <label for="packers" class="strikethrough">
+                                <li>
+                                    <%=newListItems[index]%>
+                                </li>
+                            </label>
+                        </div>
+                    </div>
+                    <% } %>
+            </ul>
         </div>
+    </div>
+</body>
 
-    </body>
-    <%- include("partials/footer.ejs") %>
+
+</html>
